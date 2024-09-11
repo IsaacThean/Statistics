@@ -48,17 +48,24 @@ def quartile(data, quartile_type):
 
 
 
-image = "B:\ICloud\iCloudDrive\Coding\Python\Statistics\Training Imgs\hotels.png"
+image = "B:\ICloud\iCloudDrive\Coding\Python\Statistics\Training Imgs/EconData.png"
 text, nums = ocrText(ocr(image))
 
 mean = mean(nums)
 mode = mode(nums)
-med = median(nums)
+medi = median(nums)
 
 #print(f"mean is {mean}")
 #print(f"mode is {mode}")
 #print(f"median is {med}")
 
-print(displayData(text, nums))
+#print(displayData(text, nums))
 
-print(quartile(nums, "lower"))
+print(nums)
+print(min(nums))
+print(max(nums))
+print(mean)
+print(mode)
+print(medi)
+print(quartile(nums, 'lower'))
+print(quartile(nums, 'upper'))
